@@ -1,5 +1,5 @@
 
- EL JUEGO : x4mv VS GGvenganza 
-x4mv: 3 
-GGvenganza: 3 
+ EL JUEGO : a VS b 
+a: 3 
+b: 4 
 TIE: 1

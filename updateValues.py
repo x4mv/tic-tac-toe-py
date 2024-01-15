@@ -1,6 +1,6 @@
 from inputUser import inputUser
 def updateValues(a,b,c,d,e,f,g,h,i,player1,turno):
-
+    
     pos_jugada = inputUser()
     if turno == player1 : 
         if pos_jugada == 1 and a == " ": 
@@ -21,9 +21,6 @@ def updateValues(a,b,c,d,e,f,g,h,i,player1,turno):
             h = 'X'
         elif pos_jugada == 9 and i == " ": 
             i = 'X'
-        else:
-            print('La casilla esta ocupada')
-            pos_jugada = updateValues(a,b,c,d,e,f,g,h,i,player1,turno)
         
     else:
         if pos_jugada == 1 and a == " ": 
@@ -44,9 +41,6 @@ def updateValues(a,b,c,d,e,f,g,h,i,player1,turno):
             h = 'O'
         elif pos_jugada == 9 and i == " ": 
             i = 'O'
-        else:
-            print('La casilla esta ocupada')
-            pos_jugada = updateValues(a,b,c,d,e,f,g,h,i,player1,turno)
     return a,b,c,d,e,f,g,h,i
 
 

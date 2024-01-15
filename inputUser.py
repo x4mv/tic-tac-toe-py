@@ -1,9 +1,12 @@
+jugadas = []
+
+
 def inputUser():
-    
-    print('\n')
     location = None
     flag = False
     rango = range(1,10)
+        
+    print('\n')
 
     while location == None or flag == False:
 
@@ -16,8 +19,13 @@ def inputUser():
         if location.isdigit():
             if int(location) not in rango:
                 print('El valor esta fuera de los rangos!!!')
-            else: 
-                flag = True
+        
+        if int(location) in jugadas:
+            print('La casilla ya esta ocupada!!!')
+        else: 
+            jugadas.append(int(location))
+            flag = True
+
     
     return int(location)
 
